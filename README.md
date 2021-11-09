@@ -1,10 +1,10 @@
-# Codespaces Rust Starter
+# Codespaces Solana Starter
 
 This project is a generic starter for developers to use in Codespaces that includes basic system tools and extensions.
 
 ## What's Included
 
-This is a basic environment that should be ready to expand upon to build a day-to-day development envrionment for Rust. It comes with the following software choices:
+This is a basic environment that should be ready to expand upon to build a day-to-day development envrionment for Solana. It comes with the following software choices:
 
 ### System Tools
 
@@ -26,6 +26,12 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 - [rustup](https://rustup.rs/): installer and toolchain manager
 - [rustfmt](https://github.com/rust-lang/rustfmt): a tool for formatting Rust code according to style guidelines
 - [clippy](https://github.com/rust-lang/rust-clippy): lints to catch common mistakes and improve your Rust code
+
+### Solana Tools
+
+Other than installing solana V1.8.2:
+
+- [anchor](https://project-serum.github.io/anchor/getting-started/introduction.html): anchor 
 
 ### VS Code Extensions
 

@@ -9,7 +9,10 @@ apt-get install -y \
   zsh \
   vim \
   build-essential \
-  openssl
+  openssl \
+  libssl-dev \
+  pkg-config \
+  libudev-dev
 
 ## Install rustup and common components
 curl https://sh.rustup.rs -sSf | sh -s -- -y 
@@ -28,3 +31,8 @@ cp -R /root/.oh-my-zsh /home/$USERNAME
 cp /root/.zshrc /home/$USERNAME
 sed -i -e "s/\/root\/.oh-my-zsh/\/home\/$USERNAME\/.oh-my-zsh/g" /home/$USERNAME/.zshrc
 chown -R $USER_UID:$USER_GID /home/$USERNAME/.oh-my-zsh /home/$USERNAME/.zshrc
+
+# install solana
+sh -c "$(curl -sSfL https://release.solana.com/v1.8.2/install)"
+
+echo 'PATH=$PATH:/$PATH:/opt/solana-1.8.2/bin' >> ~/.bashrc
